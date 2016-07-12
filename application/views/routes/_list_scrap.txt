@@ -1,0 +1,25 @@
+<table style="width:60%">
+  
+  <tr style="border-bottom: 1px solid black;font-weight:bold">
+    <td>Week #</td>
+    <?for($i = 1; $i <= 8; $i++) :?>
+      <td><?=$i?></td>
+    <?endfor?>
+  </tr>
+
+  <tr>
+    <td>Routes for 8 Week Cycle</td>
+    <?for($i = 1; $i <= 8; $i++) :?>
+      <td><?=$i?>A</td>
+    <?endfor?>
+  </tr>
+  
+  <tr>
+    <td>Routes for 4 Week Cycle</td>
+    <?for($j = 1; $j <= 2; $j++) :?>
+      <?for($i = 1; $i <= 4; $i++) :?>
+        <td><?=$i?>B</td>
+      <?endfor?>
+    <?endfor?>
+  </tr>
+</table>

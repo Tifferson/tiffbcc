@@ -1,0 +1,2 @@
+<!--  CLOSE PAGE -->
+<?= '</body></html>' ?>

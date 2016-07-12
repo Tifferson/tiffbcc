@@ -1,0 +1,20 @@
+Changes made to upgrade from 1.7 to 3x codeigniter:
+
+>Changed all references to controllers and models to have their first letter capitalized.
+
+>Instead of using the classname as a function, the function __construct was used.
+
+>calling parent::parentclassname is replaced by parent::__construct.
+
+>The OC_Controller and OC_Model were moved from application/libraries to application/core, along with all other files in application/libraries.
+
+>helpers from application/helpers were moved to system/helpers.
+
+>EXT deprecated. changed use of EXT to php ( 'something'.EXT -> 'something.php').
+
+>mysql_real_escape_string() is deprecated, changed to mysqli_real_escape_string(). Howerver, mysql_real_escape_string() uses one argument, while mysqli_real_escape_string() uses two, so another value had to be added.
+mysql_real_escape_string(connection,escapestring). >>unresolved<<
+
+
+
+
