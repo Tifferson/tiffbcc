@@ -67,7 +67,7 @@
  </tr>
   <tr> <td colspan="2" class="label">Comments:</td></tr>
   <tr> <td colspan="2"><textarea rows='13' cols='65' name="comments"><?=$work_order->comments?></textarea></td></tr>
-	<tr> <td class="label">Created By:</td><td> <?=$this->user->id_to_name($work_order->created_by)?></td></tr>
+	<tr> <td class="label">Created By:</td><td> <?=$this->User->id_to_name($work_order->created_by)?></td></tr>
 
  <? if($work_order->is_open == '0') :?>
    <tr> <td class="label">Signed Off By:</td>
