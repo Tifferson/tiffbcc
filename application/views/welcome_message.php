@@ -75,6 +75,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<p><a href="/index.php/Home">Go to Home page.</a></p>
         <p><a href="/phpinfo.php">Go to phpinfo.php.</a></p>
         <p><a href="/index.php/Test">Go to Test page.</a></p>
+        <p><a href="/pdo_test.php">Go to PDO test page.</a></p>
 	</div>
 
 	<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds. <?php echo  (ENVIRONMENT === 'development') ?  'CodeIgniter Version <strong>' . CI_VERSION . '</strong>' : '' ?></p>

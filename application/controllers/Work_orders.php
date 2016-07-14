@@ -267,8 +267,7 @@
     $data['due_on_work_orders'] = $this->Workorder->mine();
 		$data['title'] = "Work Items for " . mysql_to_mdy(now_for_mysql());
 		
-	
-		$this->load->view("work_orders/list_day", $data);
+		$this->load->view('work_orders/list_day', $data);
 	}
 
   function Location(){

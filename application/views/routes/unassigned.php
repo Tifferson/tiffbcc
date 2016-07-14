@@ -2,7 +2,7 @@
 <p>The following locations are not on any scheduled route.</p>
 <ul>
 <? foreach($not_on->result() as $loc) : ?>
-	<li id="<?=$loc->id?>"><?=anchor("locations/edit/" . $loc->id, $this->location->human_name($loc))?>
+	<li id="<?=$loc->id?>"><?=anchor("Locations/edit/" . $loc->id, $this->Location->human_name($loc))?>
       <div id="atr" class="buttons">
         <button onclick="$('#atr').hide();$('#add_to_route').show('slow');" type="button">[+] Add to route</button>
       </div>

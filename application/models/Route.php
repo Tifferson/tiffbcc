@@ -196,7 +196,7 @@
     
     function suggest_from_zip($zip){
       //optimized to not use sub-selects
-      $zip = mysqli_real_escape_string(mysqli,$zip);
+      $zip = mysql_real_escape_string($zip);
 
       $query1 =  " SELECT locations.id
                           FROM locations
