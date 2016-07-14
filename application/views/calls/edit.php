@@ -2,38 +2,38 @@
 	
 <form action="<?=site_url('Calls/update_call')?>" method="POST">
 
-	<input type="hidden" name="id" value="<?=$call->id?>" />
+	<input type="hidden" name="id" value="<?= $Call->id ?>" />
 	
 	<!-- start editable fields -->
 	<table>
 		<tr>
-			<td>Caller: </td><td> <input type="text" name="caller" value="<?=$call->caller?>" /></td>
+			<td>Caller: </td><td> <input type="text" name="caller" value="<?=$Call->caller?>" /></td>
 		</tr>
 			<tr>
   		  <td>Call is for:</td>
   		  <td>		<?= $this->load->view('users_dropdown', 
-  		                array("selected" => $call->user_id, "field" => 'user_id')) ?> </td>
+  		                array("selected" => $Call->user_id, "field" => 'user_id')) ?> </td>
   		</tr>
 		<tr>
-			<td>Callback Number: </td><td> <input type="text" name="callback" value="<?=$call->callback?>" /></td>
+			<td>Callback Number: </td><td> <input type="text" name="callback" value="<?=$Call->callback?>" /></td>
 		</tr>
 		<tr>
 			<td colspan="2">
 				Message:
 				<br/>
-				<textarea name="message" rows="4" cols="50"><?=$call->message?></textarea>
+				<textarea name="message" rows="4" cols="50"><?=$Call->message?></textarea>
 			</td>
 		</tr>
 		<tr>
 			<td>Person who took call:</td>
-			<td><input type="text" name="taken_by" value="<?=$call->taken_by?>" /></td>
+			<td><input type="text" name="taken_by" value="<?=$Call->taken_by?>" /></td>
 		</tr>
 
 		<tr>
-			<td>Time Taken: <b><? //mysql_datetime_to_human($call->called_when)?></b></td>
+			<td>Time Taken: <b><? //mysql_datetime_to_human($Call->called_when)?></b></td>
 			<td>
-				Date: <input id="date" type="text" name="date" value="<?=mysql_to_mdy($call->called_when, false)?>" /> <br/>
-				Time: <input id="time" type="text" name="time" value="<?=mysql_to_time($call->called_when)?>" />
+				Date: <input id="date" type="text" name="date" value="<?=mysql_to_mdy($Call->called_when)?>" /> <br/>
+				Time: <input id="time" type="text" name="time" value="<?=mysql_to_time($Call->called_when)?>" />
 			</td>
 		</tr>
 		<tr>
@@ -47,7 +47,7 @@
 		<tr>
 			<td colspan="2">	
 				Response: <br/>
-				<textarea rows="4" cols="50" name="response"><?=$call->response?></textarea><br/>
+				<textarea rows="4" cols="50" name="response"><?=$Call->response?></textarea><br/>
 			</td>
 		</tr>
 	</table>
